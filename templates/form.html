@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/47101d2035.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class='center'>
+    <h1 class="formhead">LET'S GET STARTED</h1>
+    <h2 class="formhead">fill the details for the prediction</h2>
+    <form method="POST", action="/predict">
+        <b>
+            <div class=form-group> 
+            First value :  <input type="text" class="form-control" name='a' placeholder="Passenger-Id"> <br><br>
+        </div>
+            <div class=form-group>
+            Second value :  <input type="text"  class="form-control" name='b' placeholder="Passenger_class(1,2 or 3)"> <br><br>
+        </div> 
+            <div class=form-group> 
+            third value :  <input type="text"  class="form-control" name='d'  placeholder="Sex(0 for male,1 for female)"> <br><br>
+        </div>
+            <div class=form-group> 
+            fourth value :  <input type="text" class="form-control"  name='e' placeholder="Age"> <br><br>
+        </div>
+            <div class=form-group>
+            fifth value : <input type="text"  class="form-control" name='f' placeholder="no of Siblings/Spouse"> <br><br>
+        </div> 
+            <div class=form-group> 
+            sixth value :  <input type="text"  class="form-control" name='g' placeholder="no of Parents/Children"> <br><br>
+        </div>
+            <div class=form-group> 
+            seventh value :  <input type="text"  class="form-control" name='i' placeholder="Fare"> <br><br>
+        </div>
+            <div class=form-group>
+            eighth value : <input type="text"  class="form-control"  name='j' placeholder="port of embarktion(C = Cherbourg 1 if applies and 0 otherwise) "> <br><br>
+        </div> 
+            <div class=form-group>
+            ninth value : <input type="text" class="form-control"  name='k'  placeholder="port of embarktion(Q = Queenstown 1 if applies and 0 otherwise)"> <br><br>
+        </div> 
+            <div class=form-group>
+           tenth value : <input type="text"  class="form-control"  name='l' placeholder="port of embarktion( S = Southampton 1 if applies and 0 otherwise)"> <br><br>
+        </div> 
+            <br></b>
+         <input type="submit" class="btn btn-secondary" value='predict!' >
+     </form>
+  
+</body>
+</html>
